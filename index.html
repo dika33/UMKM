@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Toko Sembako</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <body class="bg-white text-black">
-        <!-- Navbar -->
-        <nav class="bg-white p-4 shadow-md">
-            <div class="container mx-auto flex justify-between items-center">
-                <h1 class="text-2xl font-bold">Toko Sembako</h1>
-                <ul class="flex space-x-6">
-                    <li><a href="#" class="hover:text-gray-600">Beranda</a></li>
-                    <li><a href="#produk" class="hover:text-gray-600">Produk</a></li>
-                    <li><a href="#tentang" class="hover:text-gray-600">Tentang Kami</a></li>
-                    <li><a href="#kontak" class="hover:text-gray-600">Kontak</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Hero Section -->
-    <header class="h-80 flex flex-col items-center justify-center text-center px-4 bg-cover bg-center" style="background-image: url('https://via.placeholder.com/1200x400');">
+<body class="bg-white text-black">
+    <!-- Navbar -->
+    <nav class="bg-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Toko Sembako</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-gray-600">Beranda</a></li>
+                <li><a href="#produk" class="hover:text-gray-600">Produk</a></li>
+                <li><a href="#tentang" class="hover:text-gray-600">Tentang Kami</a></li>
+                <li><a href="#kontak" class="hover:text-gray-600">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="h-80 flex flex-col items-center justify-center text-center px-4 bg-cover bg-center" style="background-image: url('sumber/GBG.png');">
         <h2 class="text-4xl font-bold bg-white bg-opacity-70 px-4 py-2 rounded">Selamat Datang di Toko Sembako</h2>
         <p class="mt-2 text-lg bg-white bg-opacity-70 px-4 py-2 rounded">Kami menyediakan kebutuhan harian dengan harga terjangkau dan kualitas terbaik.</p>
         <button class="mt-4 bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Lihat Produk</button>
@@ -31,15 +32,53 @@
         <h2 class="text-3xl font-semibold text-center">Produk Kami</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
             <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="https://via.placeholder.com/300" alt="Beras" class="w-full h-40 object-cover">
+                <img src="sumber/download.jpeg" alt="Beras" class="w-full h-40 object-cover">
                 <div class="p-4">
-                    <h3 class="text-lg font-semibold">Beras</h3>
-                    <p class="text-gray-600">Beras premium kualitas terbaik.</p>
+                    <h3 class="text-lg font-semibold">Snack</h3>
+                    <p class="text-gray-600">Snack beragam dan murah.</p>
                     <button class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Beli</button>
                 </div>
             </div>
             <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="https://via.placeholder.com/300" alt="Minyak Goreng" class="w-full h-40 object-cover">
+                <img src="sumber/istockphoto-1542614865-612x612.jpg" alt="Minyak Goreng" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Sayuran</h3>
+                    <p class="text-gray-600">Sayuran berkualitas dan fresh.</p>
+                    <button class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Beli</button>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="sumber/istockphoto-521812367-612x612.jpg" alt="Gula Pasir" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Aneka Bumbu Dapur</h3>
+                    <p class="text-gray-600">Bumbu dapur yang beragam dan berkualitas serta ramah di dompet.</p>
+                    <button class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Beli</button>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="sumber/th.jpeg" alt="Gula Pasir" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Beras</h3>
+                    <p class="text-gray-600">Beras premium kualitas terbaik..</p>
+                    <button class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Beli</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Produk Section -->
+    <div id="produk" class="container mx-auto mt-6 p-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="sumber/minuman.jpeg" alt="Beras" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Minuman</h3>
+                    <p class="text-gray-600">Minuman sehat dam kualitas terbaik.</p>
+                    <button class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Beli</button>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="sumber/minyak.jpeg" alt="Minyak Goreng" class="w-full h-40 object-cover">
                 <div class="p-4">
                     <h3 class="text-lg font-semibold">Minyak Goreng</h3>
                     <p class="text-gray-600">Minyak goreng sehat dan berkualitas.</p>
@@ -47,7 +86,15 @@
                 </div>
             </div>
             <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="https://via.placeholder.com/300" alt="Gula Pasir" class="w-full h-40 object-cover">
+                <img src="sumber/perlatan rumah tanggga.jpeg" alt="Gula Pasir" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Peralatan rumah tangga</h3>
+                    <p class="text-gray-600">Peralatan rumah tangga yang ramah di dompet dan berkualitas.</p>
+                    <button class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Beli</button>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="sumber/gula pasir.jpeg" alt="Gula Pasir" class="w-full h-40 object-cover">
                 <div class="p-4">
                     <h3 class="text-lg font-semibold">Gula Pasir</h3>
                     <p class="text-gray-600">Gula pasir murni tanpa campuran.</p>
@@ -77,6 +124,5 @@
     <footer class="bg-white text-center p-4 mt-10 border-t border-gray-300">
         &copy; 2025 Toko Sembako. Semua Hak Dilindungi.
     </footer>
-
 </body>
 </html>
